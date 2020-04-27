@@ -170,7 +170,7 @@ class Dealer(Participant):
 
     """Refills and shuffles the deck!"""
     def reset_deck(self):
-        D.deck = D.full_deck
+        D.deck.cards_list = D.full_deck.cards_list
         D.deck.shuffle()
 
 class Player(Participant):
